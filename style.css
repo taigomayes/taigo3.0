@@ -71,6 +71,7 @@ body{
     font-family: sofia-pro, sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    overflow-y: hidden;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -186,7 +187,7 @@ h1{
 }
 
 #active{
-    background: var(--second-color);
+    background: var(--main-color);
 }
 
 i{
@@ -222,6 +223,7 @@ background: ;
 
 padding-top: 0vh;
 background-color: ;
+scroll-behavior: smooth;
 
 
 
@@ -235,7 +237,7 @@ overflow-y: scroll;
 
 
     width: 60vw;
-    left: 20vw;
+    left: 17vw;
     color: var(--dark-color);
     display: flex;
     align-items: center;
@@ -713,7 +715,32 @@ text-align: center;
 
 
 
+.about{
+
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+margin-bottom: 200px;
+flex-wrap: wrap;
+background-color: var(---color);
+width: 100%;
+flex-direction: column ;
+
+}
+
+.about-me{
+    color: var(--dark-color);
+    width: 400px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 50px;
+
+}
 
 
 
 
+.about-img{
+    border-radius: 5px;
+ 
+}
