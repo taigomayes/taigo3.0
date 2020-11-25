@@ -70,7 +70,7 @@ body{
    
     font-family: sofia-pro, sans-serif;
     scroll-behavior: smooth;
-    overflow-y: hidden;
+    overflow-x: hidden;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -216,7 +216,7 @@ height: 100%;
 width: 100vw;
 color: var(--second-color);
 font-family: sofia-pro, sans-serif;
-
+overflow-x: hidden;
 font-size: 50px;
 background: ;
 
@@ -638,6 +638,13 @@ text-align: center;
     transition: ease 0s;
   }
 
+  @media screen and (max-width: 802px){
+    #cursor {
+   display: none;
+      }
+
+  }
+
 .tilt{
     background-color: rgb(41, 50, 175);
     height: 500px;
@@ -691,7 +698,7 @@ text-align: center;
     bottom: 0;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 20vh;
     background-color: ;
 }
 
