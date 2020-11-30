@@ -1,4 +1,21 @@
 const cursor = document.getElementById("cursor");
+const submit = document.querySelector('.submit');
+
+
+
+
+
+
+/* submit button */
+
+
+submit.addEventListener('click', () => {
+
+    console.log('submit')
+} )
+
+
+/* cursor pointer */
 
 document.addEventListener("mousemove", (e) => {
     var x = e.clientX;
@@ -25,6 +42,8 @@ document.addEventListener("mousemove", (e) => {
             } 
             
         })
+
+/* overlay */
     
         close.addEventListener('click', () =>{
     
@@ -34,4 +53,46 @@ document.addEventListener("mousemove", (e) => {
     
     } 
     
-    })
+    });
+
+
+    
+
+/* const welcome = document.querySelector('.welcome');
+const gallery = document.querySelector('.gallery')
+
+    welcome.onscroll = (e) => {
+
+        console.log(welcome.scrollTop)
+        console.log()
+
+        gallery.scroll
+
+        
+        var top  = welcome.pageYOffset + welcome.innerHeight,
+  
+      
+            black = welcome.scrollTop > 3222  
+      
+
+      
+            if(black) {
+                document.documentElement.style.setProperty('--second-color', '#F6F6E9')
+              
+                
+            } ;
+        }; */
+
+const menuLink = document.querySelector('.menu-link')
+    
+
+const closeMenu = () => {
+
+    if(overlay.style.display='flex'){
+        overlay.style.display='none'
+        body.style.overflowY='auto'
+    
+    } 
+
+}
+ 

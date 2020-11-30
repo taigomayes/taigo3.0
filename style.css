@@ -52,9 +52,9 @@ table {
 
 :root{
     --blue-color: #E63946;
-    --second-color: #F6F6E9;
-    --dark-color: #081621;
-    --main-color: #005792;
+    --second-color: #081621;
+    --dark-color: #F6F6E9; 
+    --main-color: #F6F6E9;
     --detail-color: #FFA630;
 }
 
@@ -254,12 +254,6 @@ overflow-y: scroll;
     
 }
 
-.work-img{
-    width: 500px;
-    box-shadow:  4px 4px 4px grey;
-    border-radius: 5px
-    
-}
 
 .work-description{
     height: ;
@@ -269,7 +263,83 @@ overflow-y: scroll;
     position: relative;
     left: 50px;
     top: 75px;
+    display: block;
+
 }
+
+.work-img{
+    width: 500px;
+    box-shadow:  4px 4px 4px grey;
+    border-radius: 5px;
+    z-index:0;
+    opacity: 10%;
+    
+}
+
+
+.overlay-div{
+
+  
+    
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+
+}
+
+.img-overlay{
+    z-index: 100;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.overlay-div:hover .img-overlay{
+    opacity: 60%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+.visit{
+    height: 50px;
+    width: 100px;
+    border: solid 3px var(--second-color);
+    color: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 100;
+    position: absolute;
+    opacity: 0%;
+}
+
+.overlay-div:hover .visit{
+    opacity: 100%;
+    z-index: 200;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.copyright{
+    color: var(--main-color);
+    font-size: 10px;
+    text-align: center;
+    height: 25px;;
+}
+
 
 
 .project-name{
@@ -279,6 +349,7 @@ overflow-y: scroll;
 }
 .project-description{
     font-family: sofia-pro, sans-serif;
+
 
 }
 
@@ -321,7 +392,7 @@ h3{
     width: 100vw;
     height: 250px;
     background-color: ;
-display: flex;
+    display: flex;
     bottom: -100px;
     align-items: center;
     justify-content: center;
@@ -641,6 +712,18 @@ text-align: center;
   }
 
   @media screen and (max-width: 802px){
+
+    .work-description{
+        height: ;
+        background-color: ;
+        width: 500px;
+        height: 500px;
+        position: relative;
+        left: 50px;
+        top: 75px;
+        display: block;
+        
+    }
     #cursor {
    display: none;
       }
@@ -730,10 +813,11 @@ flex-direction: column ;
 
 .about-me{
     color: var(--dark-color);
-    width: 400px;
+    width: 90vw;
     font-size: 24px;
     font-weight: 700;
     margin-top: 50px;
+    max-width: 500px;
 
 }
 
@@ -742,5 +826,83 @@ flex-direction: column ;
 
 .about-img{
     border-radius: 5px;
- 
+    width: 90vw;
+    max-width: 500px;
+
+}
+
+
+.contact-div{
+
+    margin-top: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    color: var(--dark-color);
+
+}
+
+
+input {
+    width: 200px;
+    height: 25px;
+    background-color: var(--second-color);
+    border-style: none;
+    border-bottom: 1px solid white;
+    margin: 50px;
+    color: var(--main-color);
+
+}
+
+textarea{
+    width: 200px;
+    height: 25px;
+    background-color: var(--second-color);
+    border-style: none;
+    border-bottom: 1px solid white;
+    margin: 50px;
+    color: var(--main-color);
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea:focus{
+    outline: none;
+
+
+}
+
+.submit{
+    width: 200px;
+    height: 25px;
+    margin: 50px;
+    color: var(--main-color);
+    border-radius:5px;
+    outline: none;
+    background-color: var(--second-color);
+    border: 1px solid var(--main-color);
+}
+
+.submit:hover{
+  background-color: var(--main-color);
+  color: var(--second-color);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.gallery{
+    width: 100vw;
+    height: 200vh;
+    
+    
+}
+
+.colorchange{
+    background: #F6F6E9; 
+    
 }
