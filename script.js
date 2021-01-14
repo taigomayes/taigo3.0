@@ -1,7 +1,9 @@
 const cursor = document.getElementById("cursor");
 const submit = document.querySelector('.submit');
 const scrolling = document.querySelector('.scrolling');
-const circle = document.getElementById('circle')
+const circleAbout = document.getElementById('circle-about')
+const circleProjects = document.getElementById('circle-projects')
+const circleContact = document.getElementById('circle-contact')
 
 
 scrolling.addEventListener('mouseenter', () => {
@@ -16,18 +18,41 @@ scrolling.addEventListener('mouseleave', () => {
     cursor.style.height='5px'
 })
 
-const fill = () => {
+const fillAbout = () => {
     
-    circle.style.background='white';
+    circleAbout.style.background='white';
     cursor.style.display='none'
 }
 
-const unfill = () => {
+const unfillAbout = () => {
     
-    circle.style.background='var(--second-color)';
+    circleAbout.style.background='var(--second-color)';
     cursor.style.display='flex'
 }
 
+const fillProjects = () => {
+    
+    circleProjects.style.background='white';
+    cursor.style.display='none'
+}
+
+const unfillProjects= () => {
+    
+    circleProjects.style.background='var(--second-color)';
+    cursor.style.display='flex'
+}
+
+const fillContact = () => {
+    
+    circleContact.style.background='white';
+    cursor.style.display='none'
+}
+
+const unfillContact = () => {
+    
+    circleContact.style.background='var(--second-color)';
+    cursor.style.display='flex'
+}
 
 
 
