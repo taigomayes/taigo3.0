@@ -16,10 +16,10 @@
         <a href="#totop"><h1>Taigo</h1></a>
 
         <div class="links">
-            <a href="#about" class="nav-link"><h2>About</h2> <div  class="circle"></div></a>
-            <a href="#projects" class="nav-link"><h2>Projects</h2> <div class="circle"></div></a>
+            <a href="#about" class="nav-link"><h2>About</h2> <div onmouseleave='unfill()' onmouseenter='fill()' id="circle" class="circle"></div></a>
+            <a href="#projects" class="nav-link"><h2>Projects</h2> <div onmouseleave='unfill()' onmouseenter='fill()' id="circle" class="circle"></div></a>
 <!--             <a href="#photo" class="nav-link"><h2>Photo</h2> <div class="circle"></div></a> -->
-            <a href="#contact" class="nav-link"><h2>Contact</h2> <div class="circle"></div></a>
+            <a href="#contact" class="nav-link"><h2>Contact</h2> <div onmouseleave='unfill()' onmouseenter='fill()' id="circle" class="circle"></div></a>
 
         </div>
 
@@ -84,6 +84,9 @@
 </br>
 
 
+
+
+
         <h3 class="i-am">
             
             <span class="developer">Developer</span>
@@ -92,11 +95,11 @@
         
         </h3>
 
-            <div id="about" class="circles">
+            <div " class="circles">
 
                 <div class="elipse"></div>
                 <div class="elipse2"></div>
-                <div class="elipse3"></div>
+                <div id="about" class="elipse3"></div>
           
             </div>
 
@@ -105,6 +108,10 @@
 
     </div>
 
+
+    <div class="scrolling">
+       
+    </div>
     
     <div  class="about">
 
@@ -125,7 +132,7 @@
 
     <div id="projects"  ></div>
 
-    <h3 data-aos="fade-right" class="work-title">⚡Projects</h3>
+    <h3 data-aos="fade-right" class="work-title">⚡ Projects</h3>
 
 
 
@@ -141,24 +148,23 @@
 
 
 
-
-    <div class="overlay-div"> 
+    <a class="overlay-div" target="_blank" href="https://taigomayes.github.io/cacto/">
         <img  data-aos="fade-right" class="work-img" src="./img/cacto.png">
         <div class="img-overlay"></div>
         <div class="visit">visit</div>
-    </div>
+  </a>
     
     
     
     <div data-aos="fade-left"  class="work-description">
-        <h2 class="project-name">🌵Cacto</h2>
+        <h2 class="project-name">Cacto</h2>
         <br>
         <h4 class="project-role">Role: Design + Development</h4>   
         <h4 class="project-role">Type: School</h4>    
         <br>
-        <p  class="project-description">Cacto is an exercise in branding, put together as a final project during my design fundamentals class at BCIT.</p>
+        <p  class="project-description">Cacto is an exercise in branding and design, put together as a final project during my design fundamentals class at BCIT.</p>
         <br>
-        <a class="web-link" href="#">cacto.ca</a>
+        <a class="web-link" href="https://taigomayes.github.io/cacto/">cacto</a>
     </div>
 </div>
 
@@ -173,24 +179,51 @@
 
 
 <div class="work" data-tilt data-tilt-reverse="true" data-tilt-full-page-listening >
-    <div class="overlay-div"> 
+  
+    <a class="overlay-div" target="_blank" href="https://lelavietnamese.com">
+
     
 <img data-aos="fade-right" class="work-img" src="./img/lela.png"> 
- <div class="img-overlay">
-    
-    </div>
+ <div class="img-overlay"></div>
     <div class="visit">visit</div>
-    </div>
+</a>
   
         <div data-aos="fade-left" class="work-description">
-            <h2 class="project-name">🍜LeLa</h2>
+            <h2 class="project-name">LeLa</h2>
             <br>
             <h4 class="project-role">Role: Design + Development</h4>    
             <h4 class="project-role">Type: Work</h4>    
             <br>
-            <p class="project-description">I had the plaesure of designing a logo and creating a website for one of Calgarys best vietnamese restaurant</p>
+            <p class="project-description">I had the plaesure of designing a logo and creating a website for one of Calgarys best vietnamese restaurants.</p>
             <br>
-            <a class="web-link" href="#">lelavietnamese.ca</a>
+            <a class="web-link" href="https://lelavietnamese.com">lelavietnamese.com</a>
+
+        </div>
+
+</div>
+
+
+<div class="work" data-tilt data-tilt-reverse="true" data-tilt-full-page-listening >
+
+
+    <a class="overlay-div" target="_blank" href="https://relayfy.com/business/">
+    
+<img data-aos="fade-right" class="work-img" src="./img/relayfy.png"> 
+ <div class="img-overlay">
+    
+    </div>
+    <div class="visit">visit</div>
+</a>
+  
+        <div data-aos="fade-left" class="work-description">
+            <h2 class="project-name">Relayfy</h2>
+            <br>
+            <h4 class="project-role">Role: UX Design </h4>    
+            <h4 class="project-role">Type: Work</h4>    
+            <br>
+            <p class="project-description">I had the plaesure of designing a web app for a contacless self-ordering pos system used in restaurants and small businesses. </p>
+            <br>
+            <a class="web-link" href="https://relayfy.com/business/">relayfy.com</a>
 
         </div>
 
@@ -210,19 +243,20 @@
 
 
    
-<form id="contact" class="contact-div" data-aos="fade-left" action="contactform.php" method="post" enctype="text/plain" >
+<form id="contact" class="contact-div" data-aos="fade-left" action="mailto:juliantmayes@gmail.com" method="get" enctype="text/plain" >
 
     
+    <div class="in-touch"></div>
 
-    <h2>Let's get in touch</h2>
+    <h2 class="in-touch">Let's get in touch</h2>
 
     <br>
 
-    <input placeholder="your name" type="text" name="name" id="name">
+    <input placeholder="your name" type="text" name="subject" id="name">
 
-    <input placeholder="email" type="text" name="email" id="email">
+    <!-- <input placeholder="email" type="text" name="email" id="email"> -->
 
-    <textarea name="comments" type="text" placeholder="message"  ></textarea>
+    <textarea name="body" type="text" placeholder="message"  ></textarea>
 
     <button type="submit" class="submit" >send</button>
 
@@ -231,7 +265,7 @@
 
 
 
-<div class="copyright">&copy Julian Taigo Mayes 2020</div>
+<!-- <div class="copyright">&copy Julian Taigo Mayes 2020</div> -->
 
 
 
@@ -256,8 +290,8 @@
 
     <div id="cursor"></div>
 <script src="./script.js"></script>
-<!-- <script type="text/javascript" src="./vanilla-tilt.js"></script>
- -->
+<script type="text/javascript" src="./vanilla-tilt.js"></script>
+
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>

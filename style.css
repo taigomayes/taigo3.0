@@ -95,8 +95,11 @@ a{
 }
 
 h4{
+    font-size: 24px;
+
+}
+h2{
     font-size: 18px;
-    font-weight: 700;
 }
 
 
@@ -127,7 +130,7 @@ h4{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 
@@ -149,9 +152,9 @@ h4{
 }
 
 h1{
-    font-family: sofia-pro, sans-serif;
+
     position: fixed;
-    font-size: 40px;
+    font-size: 24px;
     width: 150px;
     text-align: center;
     top: 50px;
@@ -162,16 +165,16 @@ h1{
 
 .nav-link{
     margin: 25px 0 25px 0;
-    font-family: brandon-grotesque, sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+
+
+    font-size: 24px;
     width: 150px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-weight: 700;
+
 
 }
 
@@ -203,7 +206,7 @@ i{
     justify-content: center;   
     text-align: center;
     margin: 50px 0 50px 0;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 i:hover{
@@ -216,13 +219,12 @@ position: fixed;
 height: 100%;
 width: 100vw;
 color: var(--second-color);
-font-family: sofia-pro, sans-serif;
+
 overflow-x: hidden;
-font-size: 50px;
-background: ;
+font-size: 24px;
 
 padding-top: 0vh;
-background-color: ;
+
 scroll-behavior: smooth;
 
 
@@ -243,32 +245,37 @@ overflow-y: scroll;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background-color:  ;
+
     position: relative;
     top: 150px;
     flex-wrap: wrap;
     padding: 0 50px 0 50px;
     margin-bottom: 50px;;
-    font-family: sofia-pro, sans-serif;
+ 
 
     
 }
 
 
 .work-description{
-    height: ;
-    background-color: ;
-    width: 500px;
+
+    width: 700px;
     height: 500px;
     position: relative;
-    left: 50px;
-    top: 75px;
+    margin-top: 25px;;
+
+
     display: block;
 
 }
 
+.project-role{
+    font-size: 18px;
+
+}
+
 .work-img{
-    width: 500px;
+    width: 700px;
     box-shadow:  4px 4px 4px grey;
     border-radius: 5px;
     z-index:0;
@@ -310,6 +317,12 @@ justify-content: center;
     cursor: pointer;
 }
 
+.overlay-div:hover .work-img{
+    
+}
+
+
+
 
 
 .visit{
@@ -323,6 +336,8 @@ justify-content: center;
     opacity: 100;
     position: absolute;
     opacity: 0%;
+    border-radius: 5px;
+    
 }
 
 .overlay-div:hover .visit{
@@ -335,7 +350,7 @@ justify-content: center;
 
 .copyright{
     color: var(--main-color);
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     height: 25px;;
 }
@@ -343,12 +358,13 @@ justify-content: center;
 
 
 .project-name{
-    font-size: 48px;
-    font-weight: 1000px;
-     font-family: sofia-pro, sans-serif;
+    font-size: 36px;
+
+
 }
 .project-description{
-    font-family: sofia-pro, sans-serif;
+    font-size: 24px;
+
 
 
 }
@@ -373,11 +389,42 @@ justify-content: center;
 
 .hi{
     font-size: 48px;
+    position: relative;
+    top: -50px;
 }
 
 .my-name{
-    font-size: 36px;
+    font-size: 24px;
+    position: relative;
+    left: 0px;
 
+}
+
+.i-am{
+    position: relative;
+    top: 50px;
+}
+
+@media screen and (max-width:800px){
+
+    .hi{
+        font-size: 48px;
+        position: relative;
+        left: 0px;
+    }
+    
+    .my-name{
+        font-size: 24px;
+        position: relative;
+        left: 0px;
+    
+    }
+    
+    .i-am{
+        position: relative;
+        top: 0px;
+    }
+    
 }
 
 
@@ -393,7 +440,8 @@ h3{
     height: 250px;
     background-color: ;
     display: flex;
-    bottom: -100px;
+    position: relative;
+    bottom: -00px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -453,6 +501,7 @@ h3{
     position: relative;
     top:50px;
     margin: 0px 0 100px 0;
+    font-size: 36px;
     
 }
 
@@ -486,7 +535,7 @@ h3{
 }
 
 .mail i{
-    font-size: 20px;
+    font-size: 24px;
     color: var(--second-color);
 }
 
@@ -495,6 +544,7 @@ h3{
 
 .i-am{
     margin-bottom: 100px;
+    font-size: 36px;
 }
 
 
@@ -655,7 +705,7 @@ text-align: center;
        
         position: absolute;
         right: 10vw;
-        font-size: 20px;
+        font-size: 24px;
     }
 
     i{
@@ -684,31 +734,40 @@ text-align: center;
     }
 
     .work-description{
-        left: 0;
+
+        
         padding: 10px;
+        margin:0;
     }
   }
 
 
 .web-link{
-    color: var(--main-color);
+    color: transparent;
+    text-shadow: 5px 5px  var(--blue-color), -5px -5px  var(--detail-color);;
+    font-size: 18px;
 }
   
+.web-link:hover{
+    color: var(--main-color);
+    text-shadow: none;
+    transition: linear 0.2s;
+    }
 
 
 #cursor {
+    background: var(--main-color);
     position: absolute;
     z-index: -1;
-  width: 5px;
+    width: 5px;
     height: 5px;
     border: 3px solid var(--main-color);
     top: -10px;
     left: -10px;
     border-radius: 50%;
     transform: translate(-50%, -50%);
- 
-   
     transition: ease 0s;
+    transition: 0.1s;
   }
 
   @media screen and (max-width: 802px){
@@ -716,10 +775,10 @@ text-align: center;
     .work-description{
         height: ;
         background-color: ;
-        width: 500px;
+        width: 400px;
         height: 500px;
         position: relative;
-        left: 50px;
+        left: 0px;
         top: 75px;
         display: block;
         
@@ -771,7 +830,7 @@ text-align: center;
 }
 
 .menu-link{
-    font-size: 36px;
+    font-size: 24px;
     margin: 5vh;
 }
 
@@ -813,11 +872,12 @@ flex-direction: column ;
 
 .about-me{
     color: var(--dark-color);
-    width: 90vw;
+    width: 80vw;
     font-size: 24px;
-    font-weight: 700;
+    padding:0px;
     margin-top: 50px;
-    max-width: 500px;
+    max-width: 700px;
+    z-index: 1000;
 
 }
 
@@ -827,14 +887,14 @@ flex-direction: column ;
 .about-img{
     border-radius: 5px;
     width: 90vw;
-    max-width: 500px;
-
+    max-width: 700px;
+    z-index: 300;
 }
 
 
 .contact-div{
 
-    margin-top: 350px;
+    margin-top: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -842,14 +902,13 @@ flex-direction: column ;
     height: 100vh;
     flex-direction: column;
     color: var(--dark-color);
-
 }
 
 
 input {
     width: 200px;
     height: 25px;
-    background-color: var(--second-color);
+    background-color: transparent;
     border-style: none;
     border-bottom: 1px solid white;
     margin: 50px;
@@ -860,7 +919,7 @@ input {
 textarea{
     width: 200px;
     height: 25px;
-    background-color: var(--second-color);
+    background-color: transparent;
     border-style: none;
     border-bottom: 1px solid white;
     margin: 50px;
@@ -873,8 +932,6 @@ input:focus{
 
 textarea:focus{
     outline: none;
-
-
 }
 
 .submit{
@@ -897,12 +954,46 @@ textarea:focus{
 
 .gallery{
     width: 100vw;
-    height: 200vh;
-    
-    
+    height: 200vh; 
 }
 
 .colorchange{
-    background: #F6F6E9; 
+    background: #F6F6E9;    
+}
+
+in-touch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    font-size: 24px;
+}
+
+.scrolling{
+    height: 0px;
     
+
+    width: 300vw;
+    position: relative;
+    top: 330px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: none;
+    animation: 4s linear scroll infinite;
+}
+
+@keyframes scroll {
+    from{
+        position: relative;
+        left: -250px;
+    }
+
+
+    to{
+        position: relative;
+        left: -32px
+        
+    }
 }

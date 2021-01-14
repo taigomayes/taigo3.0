@@ -1,6 +1,32 @@
 const cursor = document.getElementById("cursor");
 const submit = document.querySelector('.submit');
+const scrolling = document.querySelector('.scrolling');
+const circle = document.getElementById('circle')
 
+
+scrolling.addEventListener('mouseenter', () => {
+    
+    cursor.style.width='50px';
+    cursor.style.height='50px'
+})
+
+scrolling.addEventListener('mouseleave', () => {
+    
+    cursor.style.width='5px';
+    cursor.style.height='5px'
+})
+
+const fill = () => {
+    
+    circle.style.background='white';
+    cursor.style.display='none'
+}
+
+const unfill = () => {
+    
+    circle.style.background='var(--second-color)';
+    cursor.style.display='flex'
+}
 
 
 
